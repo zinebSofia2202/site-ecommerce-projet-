@@ -1,0 +1,165 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    background-color: black;
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color: rgb(169,235,16);
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background:rgb(169,235,16);
+   margin-top: -10px;
+   text-transform:uppercase ;
+}
+
+.btn-reserve:hover{
+    background: rgb(169,235,16);
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: rgb(169,235,16);
+    border-bottom: 2px solid rgb(169,235,16);
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://webinars.goshopmatic.com/file/2020/09/shutterstock_725359933.jpg");
+    background-size: cover;
+}
+.banniere  img{
+width: 1000px;
+  text-align: center;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .contenu h2{
+    color:rgb(169,235,16);
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenu p{
+    color: #ffff;
+    font-size: 15px;
+}
+
+
+section{
+    padding: 100px;
+}
+.main{
+    background-color: rgb(226, 226, 226);
+    padding: 20px; /* spacage pour les element a l'interieur*/
+    margin-top: 20px; /* ajouter un space en haut de main */
+}
+
+/* style de la liste des produits */
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+/* style de la card sur produit*/
+.card1{
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 30px 30px 30px 30px rgb(204, 204, 204);
+    height: 30%;
+    width:30%;
+}
+
+/* style de l'iamge du produit */
+.produit-img {
+    height: 250px;
+    width: 100%;
+}
+
+/* titre du produit */
+.card-body .card-title {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* deszcription du produit */
+.card-body .desc{
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* style du prix du produit */
+
+.card-body .price{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: rgb(169,235,16);
+}
+
+/* style du bouton d'achat */
+.card-body .buy-btn a{
+  
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+}
+.buy-btn {
+    background-color: rgb(169,235,16);
+      text-align: center;
+ }
